@@ -1,4 +1,3 @@
-
 #include <string>
 #include <limits>
 #include <vector>
@@ -29,12 +28,13 @@ int number_needed(string a, string b) {
 
 int main() {
     string a;
-    getline(cin>>ws, a);
+    cin >> a;
     string b;
-    getline(cin>>ws, b);
+    cin >> b;
     cout << number_needed(a, b) << endl;
     return 0;
 }
+
 
 
 
