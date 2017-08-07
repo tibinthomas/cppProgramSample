@@ -14,6 +14,7 @@ int main(){
   string line;
   for(int k =1;k<=num;k++){
     getline(cin,line);
+    
     for(int i=0,j=0;line[i]!='\0';i++,j++){
       if(line[i]==' '){
         j=0;
@@ -23,7 +24,7 @@ int main(){
       word.push_back(line[i]);
     }
     ln.push_back(word);
-    cout<<"Case #"<<k;
+    cout<<"Case #"<<k<<":";
     for(it=ln.rbegin();it!=ln.rend();it++){
       cout<<*it;
     }
